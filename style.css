@@ -1,0 +1,425 @@
+/* common */
+
+* {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* *::after {
+  box-sizing: border-box;
+} */
+
+body {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.product-name {
+  height: 240px;
+}
+
+h1 {
+  font-family: a sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin: 32px 0 8px;
+}
+
+.buttons {
+  margin: 8px 0;
+}
+
+.button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin: 8px 0;
+  background: linear-gradient(to right, #ff7979, #ff1493);
+  color: white;
+  border: none;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #ffc0cb;
+}
+
+.back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  content: '';
+  width: 15px;
+  height: 15px;
+  transform: rotate(135deg);
+}
+
+/* :not(.device) {
+  border-radius: 8px; */
+  /* margin: 0 auto; */
+}
+
+/* button a {
+  color: white;
+  text-decoration: none;
+} */
+
+button .login {
+  width: 360px;
+  background-color: black;
+  color: white;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: #ee82ee;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h3 {
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.icons {
+  margin: 0 auto;
+  /* padding-top: 80px; */
+  box-sizing: border-box;
+  /* width: 200px;
+  height: 200px; */
+  /* background: linear-gradient(to right, #ee82ee, #ff1493);
+  border-radius: 50%; */
+  text-align: center;
+}
+
+.dreamo {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.dreamo02 {
+  border: 40px solid #ff96AC;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.agreement,
+.main {
+  height: 440px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.agreement p {
+  font-size: 14px;
+}
+
+/* .main p {
+  padding-top: 16px;
+} */
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+
+.input {
+  border: 1px solid lightgray;
+  vertical-align: top;
+  margin-top: 0;
+  line-height: 1.5;
+  /* padding-top: 0; */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-left: 0;
+}
+
+li a {
+  color: #ee82ee;
+  text-decoration: none;
+}
+
+/* #checkbox1,
+#checkbox2 {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: skyblue;
+    border-radius: 50%;
+    vertical-align: middle;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+} */
+
+/* #checkbox1,
+#checkbox2: checked {
+    background-color: #85C1E9; */
+}
+
+section p {
+  text-align: center;
+}
+
+/* span {
+  padding-right: 16px;
+} */
+
+.description {
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.description02 {
+  /* text-align: center; */
+  margin: 0 auto;
+  padding-left: 36px;
+  font-size: 12px;
+  color: gray;
+}
+
+/* 同意事項 */
+
+.Chkbox-Input {
+  appearance: none;
+  position: absolute;
+}
+
+.Chkbox-Text::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #ffa07a;
+  background-color: #ff1493;
+  width: 20px;
+  height: 20px;
+}
+
+.Chkbox-Text {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Text {
+  margin-left: 4px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* .Chkbox-Text::after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: skyblue;
+} */
+
+/* .Chkbox::before {
+  position: absolute;
+  margin-top: 4px;
+  display: block;
+  border: 1px solid skyblue;
+  content: '';
+  width: 16px;
+  height: 16px;
+} */
+
+.Chkbox-Input:checked + .Chkbox-Text::after {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  display: block;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  content: '';
+  width: 5px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+
+/* Setup */
+
+.device {
+  display: block;
+  width: 100%;
+  line-height: 88px;
+  height: 88px;
+  /* margin: 8px 0; */
+  background: #fff;
+  color: #333;
+  border: 1px solid lightgray;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 auto;
+  padding-left: 40px;
+  text-align: left;
+  transition-property: transform;
+  transition-duration: .5s;
+}
+
+.device:hover {
+  background-color: #ffc0cb;
+  /* transform: scale(1.1, 1.1); */
+  transform: scale(1.1);
+  transition: .1s;
+}
+
+.device:active {
+  background-color: #ee82ee;
+  /* transform: scale(1.1); */
+  transition: background .5s;
+  transform: scale(1);
+}
+
+.deviceIcons {
+  margin-top: 8px;
+}
+
+.deviceName {
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main li:nth-child(4) {
+  border-bottom: 1px solid lightgray;
+}
+
+/* Wi-Fi設定 */
+
+.wifi-list {
+  padding-left: 40px;
+  list-style-position: inside;
+}
+
+.wifi {
+  padding: 8px 0;
+  /* display: flex; */
+  align-items: center;
+}
+
+/* .wifi::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(wifi.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+
+.wifi-photo,
+.password {
+  margin-left: 0;
+  text-align: left;
+}
+
+.network {
+  text-align: left;
+  margin: 0;
+  /* letter-spacing: 1em; */
+}
+
+.button {
+  color: white;
+  /* text-align: left; */
+  margin: 0 auto;
+}
+
+.link {
+  color: white;
+  text-align: center;
+}
+
+/* WiFi setting */
+
+.wifi-setting {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: bottom;
+  padding-top: 8px;
+  line-height: 1.5;
+}
+
+.description03 {
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.description04 {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 24px 16px;
+}
+
+/* .ssid {
+  vertical-align: middle;
+} */
+
+
+/* setting-end */
+
+/* .icon-e {
+  margin: 0 auto;
+  padding-top: 80px;
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  background: linear-gradient(to right, skyblue, #99c);
+  border: 40px solid #c0ccff;
+  border-radius: 50%;
+  text-align: center;
+} */
