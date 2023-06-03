@@ -6,6 +6,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script>
+    function openWiFiSettings() {
+      if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+        window.location.href = 'prefs:root=WIFI';
+      } else if (/Android/.test(navigator.userAgent)) {
+        window.location.href = 'intent://#Intent;action=android.settings.WIFI_SETTINGS;category=android.intent.category.DEFAULT;end';
+      } else {
+        console.log('WiFi settings not supported on this platform.');
+      }
+    }
+  </script>
   <section class="main">
     <h4>DreamoのWi-Fiに接続する</h4>
     <ol class="wifi-list">
@@ -29,16 +40,5 @@
   </section>
 
   </div>
-  <script>
-    function openWiFiSettings() {
-      if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-        window.location.href = 'prefs:root=WIFI';
-      } else if (/Android/.test(navigator.userAgent)) {
-        window.location.href = 'intent://#Intent;action=android.settings.WIFI_SETTINGS;category=android.intent.category.DEFAULT;end';
-      } else {
-        console.log('WiFi settings not supported on this platform.');
-      }
-    }
-  </script>
 </body>
 </html>
