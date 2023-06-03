@@ -9,9 +9,9 @@
   <script>
     function openWiFiSettings() {
       if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-        window.location.href = 'prefs:root=WIFI';
+        window.location.href = 'App-Prefs:root=WIFI';
       } else if (/Android/.test(navigator.userAgent)) {
-        window.location.href = 'intent://#Intent;action=android.settings.WIFI_SETTINGS;category=android.intent.category.DEFAULT;end';
+        window.location.href = 'intent:#Intent;action=android.settings.WIFI_SETTINGS;end';
       } else {
         console.log('WiFi settings not supported on this platform.');
       }
