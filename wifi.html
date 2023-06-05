@@ -13,7 +13,7 @@
       } else if (/Android/.test(navigator.userAgent)) {
         window.location.href = 'intent:#Intent;action=android.settings.WIFI_SETTINGS;end';
       } else {
-        console.log('WiFi settings not supported on this platform.');
+        alert('WiFi settings not supported on this platform.');
       }
     }
   </script>
