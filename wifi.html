@@ -13,7 +13,7 @@
       } else if (/Android/.test(navigator.userAgent)) {
         window.location.href = 'intent:#Intent;action=android.settings.WIFI_SETTINGS;end';
       } else {
-        alert('WiFi settings not supported on this platform.');
+        document.querySelector('.test').textContents('WiFi settings not supported on this platform.');
       }
     }
   </script>
@@ -23,6 +23,7 @@
       <li class="wifi">Wi-Fi設定を開く
           <div class="buttons">
             <button class="button" onclick="openWiFiSettings()">WiFi設定</button>
+          </div>
       </li>
       <li class="wifi">Dreamoのネットワークに接続する
         <div class="wifi-photo">
@@ -36,9 +37,10 @@
       </li>
       <li class="wifi">Wi-Fi接続完了後、アプリを再度開く
       </li>
+      <li>
+        <p class="test">Test</p>
+      </li>
     </ol>
   </section>
-
-  </div>
 </body>
 </html>
