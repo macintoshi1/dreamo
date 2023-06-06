@@ -335,8 +335,8 @@ section p {
 /* Wi-Fi設定 */
 
 .wifi-list {
-  padding-left: 40px;
   list-style-position: inside;
+  padding-left: 0;
 }
 
 .wifi {
@@ -423,3 +423,7 @@ section p {
   border-radius: 50%;
   text-align: center;
 } */
+
+.test {
+  display: none;
+}
