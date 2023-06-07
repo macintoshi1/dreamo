@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <title>wifi</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=320">
 </head>
 <body>
   <script>
     function openWiFiSettings() {
       if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
         window.location.href = 'App-Prefs:root=WIFI';
+        document.querySelector('test').textContent('iPhone is here.')
       } else if (/Android/.test(navigator.userAgent)) {
         window.location.href = 'intent:#Intent;action=android.settings.WIFI_SETTINGS;end';
       } else {
-        document.querySelector('.test').textContents('WiFi settings not supported on this platform.');
+        document.querySelector('test').textContent('WiFi settings not supported on this platform.');
       }
     }
   </script>
